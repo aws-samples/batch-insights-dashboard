@@ -7,6 +7,6 @@ from stacks import *
 app = cdk.App()
 stack = MainStack(app, "AWSBatchInsightsDashboard")
 
-Tags.of(cdk.Stack).add("application", 'BatchInsightsDashboard')
+Tags.of(stack).add("application", 'BatchInsightsDashboard')
 
 app.synth()
